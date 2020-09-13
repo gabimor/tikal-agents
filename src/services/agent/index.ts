@@ -8,7 +8,7 @@ export function getIsolatedAgents(agents: Agent[]): string[] {
     return acc;
   };
 
-  // returns an oct with each agent and number of countries ie. { "007": 2, "005": 5 , ... }
+  // returns an object with each agent and number of countries he's been in: { "007": 2, "005": 5 , ... }
   const agentsInCounties = agents.reduce(reducer, {});
 
   return Object.entries(agentsInCounties)
