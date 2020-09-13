@@ -1,4 +1,3 @@
-import { count } from "console";
 import { Agent } from "../../types/Agent";
 
 export function getIsolatedAgents(agents: Agent[]): string[] {
@@ -13,7 +12,7 @@ export function getIsolatedAgents(agents: Agent[]): string[] {
 
   return Object.entries(agentsInCounties)
     .filter((entry) => entry[1] === 1)
-    .map((x) => x[0]);
+    .map((agent) => agent[0]);
 }
 
 export function mostIsolatedCountry(agents: Agent[]): string[] {
@@ -38,5 +37,5 @@ export function mostIsolatedCountry(agents: Agent[]): string[] {
   // filter all countries with less than max number of isolated agents (to support edge case where 2 countries have equal isolation)
   const filtered = sorted.filter((item) => item[1] >= isolatedMax);
 
-  return filtered.map((i) => i[0]);
+  return filtered.map((item) => item[0]);
 }

@@ -1,6 +1,6 @@
-import Agent from "../types/Agent";
+import { Agent } from "../types/Agent";
 
-export const data: Agent[] = [
+export const agents: Agent[] = [
   {
     agent: "007",
     country: "Brazil",
