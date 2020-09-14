@@ -16,6 +16,8 @@ The Agents SPA is built with:
 - Google Maps API
 - Emotion.sh
 - Jest for tests
+  - Tests for isolation detection logic (including two countries with equal isolation)
+  - Google Maps API
 
 ### Structure
 
