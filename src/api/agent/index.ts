@@ -14,7 +14,11 @@ export async function getAllAgents(): Promise<Agent[]> {
       );
     }
   }
-  return agents;
+
+  const sortedAgents = agents.sort((a, b) => {
+    return new Date(a.date).getTime() - new Date(b.date).getTime();
+  });
+  return sortedAgents;
 }
 
 export function getIsolatedAgents(agents: Agent[]): string[] {

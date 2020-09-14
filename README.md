@@ -1,4 +1,7 @@
-# Tikal agents
+# Agents
 
-`yarn test` to run all the tests
-`yarn start` to start the client
+`yarn test` to test that everythig is ready.  
+`yarn start` to view all agents. 
+
+This repo will self destruct 5 minutes after viewing.  
+Good luck ;)
