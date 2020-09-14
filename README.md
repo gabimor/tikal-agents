@@ -1,12 +1,14 @@
 # Agents
 
 `yarn test` to test that everythig is ready.  
-`yarn start` to view all agents. 
+`yarn start` to view all agents.
 
 This repo will self destruct 5 minutes after viewing.  
 Good luck ;)
 
-## Tech
+## Details
+
+### Tech
 
 The Agents SPA is built with:
 
@@ -15,7 +17,7 @@ The Agents SPA is built with:
 - Emotion.sh
 - Jest for tests
 
-## Stcuture
+### Structure
 
 - src
   - api - contains the logic and tests
@@ -23,4 +25,3 @@ The Agents SPA is built with:
   - consts - some constants like colors and Google API related stuff
   - data - a static file containing the agents array
   - types - shared type definitions
-  
