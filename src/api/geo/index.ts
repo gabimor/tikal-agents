@@ -1,4 +1,3 @@
-import { google } from "google-maps";
 import { GOOGLE_MAPS_API_KEY, GOOGLE_MAPS_API_URL } from "../../consts";
 
 export const getHaversineDistance = (
