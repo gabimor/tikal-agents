@@ -1,4 +1,21 @@
 import { Agent } from "../../types/Agent";
+import { agents } from "../../data";
+import { getCoordForAddress, getHaversineDistance } from "../geo";
+import { HEADQUARTERS_COORDS } from "../../consts";
+
+export async function getAllAgents(): Promise<Agent[]> {
+  for (const agent of agents) {
+    const coords = await getCoordForAddress(agent.address);
+
+    if (coords) {
+      agent.distanceToHeadquarters = getHaversineDistance(
+        coords,
+        HEADQUARTERS_COORDS
+      );
+    }
+  }
+  return agents;
+}
 
 export function getIsolatedAgents(agents: Agent[]): string[] {
   const reducer = (acc: any, currentAgent: Agent) => {
